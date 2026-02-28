@@ -134,7 +134,7 @@ export default function ToolPage({ title, icon, color, description, keywords, ch
         }
 
         /* --- Full Mobile Optimization --- */
-        @media (max-width: 640px) {
+        @media (max-width: 480px) {
           .tool-container {
             padding: 20px 16px 60px;
           }
@@ -161,8 +161,9 @@ export default function ToolPage({ title, icon, color, description, keywords, ch
             display: none; /* Hide scrollbar for cleaner look */
           }
           .other-tools-grid {
-            grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
+            grid-template-columns: repeat(1, 1fr); /* Force 2 columns */
             gap: 8px;
+            
           }
           .related-tool-item {
             padding: 10px !important;
