@@ -1,0 +1,18 @@
+// app/robots.js — Auto generates /robots.txt
+// Next.js reads this and serves it automatically
+
+const SITE = "https://toolkitpro.io"; // ← CHANGE to your domain
+
+export default function robots() {
+  return {
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/api/", "/_next/"],
+      },
+    ],
+    sitemap: `${SITE}/sitemap.xml`,
+    host:    SITE,
+  };
+}
